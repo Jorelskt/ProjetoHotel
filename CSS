@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Press+Start+2P&family=Sarala:wght@400;700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/paisagem.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 40px;
+    font-size: 13px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #FCFFE7;
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    background-color: #FCFFE7;
+    color: #000;
+    transition: 0.4s ease-in-out;
+}
+
+ul li.lista1 a{
+    background-color: #FCFFE7;
+    color: #000;
+}
+
+.logo img{
+    float: left;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.principal{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tituloCentral{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tituloCentral h1{
+    color: #000;
+    font-size: 40px;
+    font-family: 'Sarala', sans-serif;
+}
+
+.botao1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botaozinho{
+    border: 3px solid #000;
+    padding: 5px 20px;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Sarala', sans-serif;
+}
+
+.botaozinho:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.sub-principal{
+    display: none;
+    top: 6%;
+    position: relative;
+}
+
+.sub-principal ul{
+    position: absolute;
+}
+
+.principal ul li:hover .sub-principal{
+    display: block;
+    position: absolute;
+    background-color: #060047;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+.principal ul li:hover .sub-principal ul{
+    display: block;
+    margin: 8px;
+}
+
+.principal ul li:hover .sub-principal ul li{
+    width: 75px;
+    padding: 6px;
+    border-bottom: 2px #060047;
+    background: transparent;
+
+}
